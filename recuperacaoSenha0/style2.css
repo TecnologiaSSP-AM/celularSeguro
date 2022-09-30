@@ -36,9 +36,13 @@ height: 400px;
     justify-items: center;
     margin-top: 10px;
 }
-.bnt-custon{
+.btn-custon {
     margin-top: 40px;
     background-color: #008D8C;
     border: none;
 }
 
+label{
+   margin-left: 5px;
+   padding: 5px;
+}
