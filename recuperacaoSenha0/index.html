@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Bai+Jamjuree:wght@200&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Login-Bootstrap</title>
+</head>
+
+<body>
+    
+    <main class="main-container">
+        <div id="imagem" class="container-fluid">
+        <img src="{% static 'img/logo.png' %}" alt="logo-ssp">
+        </div>
+
+
+        <div class="container-fluid" id="container">
+        <h3>Celular Seguro</h3>
+        <form class="" action="{% url 'usuarios.login' %}" method="POST">
+            {% csrf_token %}
+            <div class="col-md">
+                <label for="email" class="form-label">E-mail</label>
+                <input style="font-size: 16px;" type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="col-md">
+                <label for="password" class="form-label">Senha</label>
+                <input style="font-size: 16px;" type="password" class="form-control" id="password" name="password"
+                    placeholder="Digite sua Senha">
+            </div>
+            <div class="col-md-12" style="text-align: center;">
+                <button type="submit" class="btn-custon">Continuar</button>
+                <div class="footer">
+
+                    <div class="social-fields">
+                        <p class="semc">Ainda não tem conta ?</p>
+                        <input class="btn-custon5" type="button" class="cadastro" onclick="exibirCriarConta()" ,
+                            value=" Cadastre-se">
+                            <a href="index2.html">Esqueceu sua senha?</a>
+                    </div>
+                    <div class="bt-container">
+                        <a href="{% url 'admin:index' %}" type="button" class="btn-custon4" style="
+                        color: rgb(2, 2, 2);
+                        background-color: #0b66f0;
+                        font-family: 'Staatliches', cursive;
+                        border: none;
+                        font-size: 18px;
+                        border-radius: 5px;
+                        width: 100%;
+                        color: #FFF;
+                        text-decoration: none;
+                        text-align: center;
+                        align-items: left;
+                        float: left; 
+                        margin-top: 20px;
+                        margin-bottom: 15px;">
+                            <i>
+                            </i>Sessão de Agente</a>
+                    </div>
+                    {% if messages %}
+                    <ul class="messages" style="list-style: none; color: red; text-align: center;">
+                        {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                            {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </form>
+
+        <script>
+            function exibirCriarConta() {
+                location.href = "{% url 'cadastro' %}";
+            } 
+        </script>
+        </div>
+    </main>
+
+    <footer class="cp-text">
+        <p> © 2022 DEV/DETEC SSP-AM.</p>
+    </footer>
+
+</body>
+
+</html>

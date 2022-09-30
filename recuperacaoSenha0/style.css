@@ -1,0 +1,219 @@
+body{
+    background-color: #008D8C;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#imagem{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#imagem img{
+    height: 180px;
+}
+
+#container{
+/* display: flex;
+flex-direction: column; */
+background-color: #FFF;
+border-radius: 6px;
+box-shadow: .5px 10px 15px rgba(0, 0, 0, .2);
+margin: 0px auto;
+padding: 25px;
+width: 300px;
+height: 600px;
+}
+
+#container h3{
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Staatliches', cursive;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    /* position: relative; */
+ }
+
+ #container h::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #008d8c, #34adad);
+}
+
+
+#container form{
+    padding-bottom: 6vh;
+}
+
+.form-label{
+    font-family: 'Arvo', serif;
+    color: rgb(31, 30, 30);
+    margin-left: 12px;
+    font-size: 15px;
+}
+
+#container .form-control:focus{
+    box-shadow: none;
+ 
+}
+#container .form-control{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 10px;
+    
+}
+/* #imagem{
+    display: flex;
+    justify-content: center;
+    height:215px;
+    padding: 20px;
+} */
+
+#e-mail{
+    margin-bottom: 20px;
+
+}
+.forma{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.btn-custon{
+    color: rgb(252, 244, 244);
+    background-color: #008D8C;
+    font-family: 'Staatliches', cursive;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    width: 100%;
+    transition: 1.0s;
+    margin-top: 30px;
+    margin-bottom: 2px;
+}
+
+.btn-custon:hover{
+    background-color: #3ecaca;
+    transition: 1.9s;
+}
+
+.btn-custon5{
+    color: rgb(252, 244, 244);
+    background: linear-gradient(to right, #1e3c72, #468aca);
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    width: 100%;
+    transition: 1.0s;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    transition: ease-in-out 1s;
+    font-family: 'Staatliches', cursive;
+}
+
+.btn-custon5:hover{
+    background: linear-gradient(to left, #1e3c72, #468aca);
+    transition: 1.9s;
+}
+
+.cp-text{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, .7);
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer span {
+    color: rgb(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.footer .social-field {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footer .social-field.gmail {
+    background: linear-gradient(to right, #1e3c72, #468aca);
+    transition: ease-in-out 1s;
+    font-family: 'Staatliches', cursive;
+    
+}
+
+.footer .social-field.gmail:hover{
+    background: linear-gradient(to left, #1e3c72, #468aca);
+    
+}
+
+h6{
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    margin-top: 10px;
+}
+.error{
+    list-style: none;
+    color: red;
+    text-align: center;
+}
+        
+.btn-custon4 {
+    color: rgb(2, 2, 2);
+    background-color: #008D8C;
+    font-family: 'Staatliches', cursive;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 25vh;
+    transition: 1.0s;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    align-items: left;
+    float: right;
+}
+.btn-custon4:hover{
+    background-color:#008D8C;
+    transition: 1,9s;
+    color: #b3b8b8;
+}

@@ -1,0 +1,44 @@
+body{
+    background-color: #008D8C;
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+background-color: #FFF;
+border-radius: 6px;
+box-shadow: .5px 10px 15px rgba(0, 0, 0, .2);
+
+padding: 25px;
+width: 300px;
+height: 400px;
+
+}
+.container h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Staatliches', cursive;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    
+}
+.recuperacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 10px;
+}
+.bnt-custon{
+    margin-top: 40px;
+    background-color: #008D8C;
+    border: none;
+}
+
